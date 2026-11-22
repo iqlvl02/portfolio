@@ -1,549 +1,535 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio website" />
-    <title>Arjay Clyn Rafanan| Portfolio</title>
 
-    <!-- Tailwind utility classes used by the layout -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website" />
+  <title>Arjay Clyn Rafanan| Portfolio</title>
 
-    <!-- Fonts and icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
+  <!-- Tailwind utility classes used by the layout -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Your separated CSS file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Fonts and icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <!-- Load scripts after HTML parsing -->
-    <script src="js/projects.js" defer></script>
-    <script src="js/main.js" defer></script>
-  </head>
-  <body class="bg-slate-950 text-slate-100 antialiased">
-    <div class="site-background" aria-hidden="true"></div>
+  <!-- Your separated CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- HEADER -->
-    <header class="site-header">
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="#home" aria-label="Arjay home"
-          ><span class="brand-mark">A</span
-          ><span>Arjay<span class="accent">.dev</span></span></a
-        >
+  <!-- Load scripts after HTML parsing -->
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
 
-        <div class="desktop-nav">
-          <a class="nav-link active" href="#home">Home</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
-        </div>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <div class="site-background" aria-hidden="true"></div>
 
-        <a class="button button-small header-cta" href="#contact"
-          >Let's talk
-          <span class="material-symbols-outlined">arrow_outward</span></a
-        >
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Arjay home"><span class="brand-mark">A</span><span>Arjay<span
+            class="accent">.dev</span></span></a>
 
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </nav>
-
-      <div class="mobile-menu" id="mobile-menu" hidden>
-        <a class="mobile-nav-link" href="#home">Home</a>
-        <a class="mobile-nav-link" href="#about">About</a>
-        <a class="mobile-nav-link" href="#skills">Skills</a>
-        <a class="mobile-nav-link" href="#projects">Projects</a>
-        <a class="mobile-nav-link" href="#contact">Contact</a>
+      <div class="desktop-nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
-    </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero section-wrap" id="home">
-        <div class="hero-copy">
-          <div class="availability">
-            <span class="status-dot"></span> Available for opportunities
+      <a class="button button-small header-cta" href="#contact">Let's talk
+        <span class="material-symbols-outlined">arrow_outward</span></a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a class="mobile-nav-link" href="#home">Home</a>
+      <a class="mobile-nav-link" href="#about">About</a>
+      <a class="mobile-nav-link" href="#skills">Skills</a>
+      <a class="mobile-nav-link" href="#projects">Projects</a>
+      <a class="mobile-nav-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability">
+          <span class="status-dot"></span> Available for opportunities
+        </div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>
+          Arjay Clyn Rafanan<span class="accent">.</span><br /><span class="muted-heading">Developer &amp;
+            Creator</span>
+        </h1>
+        <p class="hero-description">
+          I build thoughtful digital experiences by combining clean code,
+          practical problem-solving, and a little creativity.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">Explore my work
+            <span class="material-symbols-outlined">arrow_downward</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch
+            <span class="material-symbols-outlined">north_east</span></a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub
+            <span class="material-symbols-outlined">open_in_new</span></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn
+            <span class="material-symbols-outlined">open_in_new</span></a>
+          <a href="mailto:hello@example.com">Email <span class="material-symbols-outlined">mail</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>developer.ts</span><span class="material-symbols-outlined">more_horiz</span>
           </div>
-          <p class="eyebrow">HELLO, I'M</p>
-          <h1>
-            Arjay Clyn Rafanan<span class="accent">.</span><br /><span
-              class="muted-heading"
-              >Developer &amp; Creator</span
-            >
-          </h1>
-          <p class="hero-description">
-            I build thoughtful digital experiences by combining clean code,
-            practical problem-solving, and a little creativity.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#projects"
-              >Explore my work
-              <span class="material-symbols-outlined">arrow_downward</span></a
-            >
-            <a class="button button-ghost" href="#contact"
-              >Get in touch
-              <span class="material-symbols-outlined">north_east</span></a
-            >
-          </div>
-          <div class="social-row">
-            <a href="https://github.com/" target="_blank" rel="noreferrer"
-              >GitHub
-              <span class="material-symbols-outlined">open_in_new</span></a
-            >
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
-              >LinkedIn
-              <span class="material-symbols-outlined">open_in_new</span></a
-            >
-            <a href="mailto:hello@example.com"
-              >Email <span class="material-symbols-outlined">mail</span></a
-            >
+          <div class="code-content">
+            <p>
+              <span class="code-purple">const</span>
+              <span class="code-blue">developer</span> = {
+            </p>
+            <p class="indent">
+              <span class="code-green">name</span>:
+              <span class="code-orange">'Arjay Clyn'</span>,
+            </p>
+            <p class="indent">
+              <span class="code-green">role</span>:
+              <span class="code-orange">'Full-stack Developer'</span>,
+            </p>
+            <p class="indent"><span class="code-green">skills</span>: [</p>
+            <p class="indent double">
+              <span class="code-orange">'JavaScript'</span>,
+              <span class="code-orange">'React'</span>,
+            </p>
+            <p class="indent double">
+              <span class="code-orange">'Node.js'</span>,
+              <span class="code-orange">'UI/UX'</span>
+            </p>
+            <p class="indent">],</p>
+            <p class="indent">
+              <span class="code-green">curious</span>:
+              <span class="code-purple">true</span>,
+            </p>
+            <p>};</p>
+            <p class="code-comment">// always learning something new</p>
+            <div class="terminal-line">
+              <span class="terminal-prompt">➜</span>
+              <span>ready_to_build</span><span class="cursor"></span>
+            </div>
           </div>
         </div>
+        <div class="floating-card floating-card-top">
+          <span class="material-symbols-outlined">terminal</span>
+          <div><strong>Clean code</strong><small>Built with care</small></div>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <span class="material-symbols-outlined">rocket_launch</span>
+          <div>
+            <strong>Always learning</strong><small>One step at a time</small>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
 
-        <div class="hero-visual">
-          <div class="visual-glow"></div>
-          <div class="code-window">
-            <div class="window-top">
-              <div class="window-dots"><i></i><i></i><i></i></div>
-              <span>developer.ts</span
-              ><span class="material-symbols-outlined">more_horiz</span>
-            </div>
-            <div class="code-content">
-              <p>
-                <span class="code-purple">const</span>
-                <span class="code-blue">developer</span> = {
-              </p>
-              <p class="indent">
-                <span class="code-green">name</span>:
-                <span class="code-orange">'Arjay Clyn'</span>,
-              </p>
-              <p class="indent">
-                <span class="code-green">role</span>:
-                <span class="code-orange">'Full-stack Developer'</span>,
-              </p>
-              <p class="indent"><span class="code-green">skills</span>: [</p>
-              <p class="indent double">
-                <span class="code-orange">'JavaScript'</span>,
-                <span class="code-orange">'React'</span>,
-              </p>
-              <p class="indent double">
-                <span class="code-orange">'Node.js'</span>,
-                <span class="code-orange">'UI/UX'</span>
-              </p>
-              <p class="indent">],</p>
-              <p class="indent">
-                <span class="code-green">curious</span>:
-                <span class="code-purple">true</span>,
-              </p>
-              <p>};</p>
-              <p class="code-comment">// always learning something new</p>
-              <div class="terminal-line">
-                <span class="terminal-prompt">➜</span>
-                <span>ready_to_build</span><span class="cursor"></span>
-              </div>
-            </div>
-          </div>
-          <div class="floating-card floating-card-top">
-            <span class="material-symbols-outlined">terminal</span>
-            <div><strong>Clean code</strong><small>Built with care</small></div>
-          </div>
-          <div class="floating-card floating-card-bottom">
-            <span class="material-symbols-outlined">rocket_launch</span>
+    <!-- ABOUT -->
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>
+          Curious mind.<br /><span class="muted-heading">Purposeful work.</span>
+        </h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="lead">
+            I enjoy turning ideas into useful, accessible, and easy-to-use
+            digital products.
+          </p>
+          <p>
+            My approach is to understand the problem first, plan a practical
+            solution, and then build and improve it through testing and
+            feedback. I like learning new technologies and collaborating with
+            people who care about the details.
+          </p>
+          <p>
+            This portfolio is a place to share projects, skills, and the
+            progress I make as a developer.
+          </p>
+          <a class="text-link" href="#contact">Have a project in mind?
+            <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+        <div class="about-facts">
+          <article class="fact-card">
+            <span class="fact-icon material-symbols-outlined">school</span>
             <div>
-              <strong>Always learning</strong><small>One step at a time</small>
+              <small>EDUCATION</small>
+              <h3>Computer Science / IT</h3>
+              <p>Update with your school and degree</p>
             </div>
-          </div>
+          </article>
+          <article class="fact-card">
+            <span class="fact-icon material-symbols-outlined">location_on</span>
+            <div>
+              <small>LOCATION</small>
+              <h3>Cebu City, Philippines</h3>
+              <p>Open to remote collaboration</p>
+            </div>
+          </article>
+          <article class="fact-card">
+            <span class="fact-icon material-symbols-outlined">interests</span>
+            <div>
+              <small>INTERESTS</small>
+              <h3>Web, UI &amp; Technology</h3>
+              <p>Building, learning, and experimenting</p>
+            </div>
+          </article>
         </div>
-        <a class="scroll-cue" href="#about"
-          ><span class="scroll-line"></span> SCROLL TO EXPLORE</a
-        >
-      </section>
+      </div>
+    </section>
 
-      <!-- ABOUT -->
-      <section class="section-wrap section-block" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">A LITTLE ABOUT ME</p>
-          <h2>
-            Curious mind.<br /><span class="muted-heading"
-              >Purposeful work.</span
-            >
-          </h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-copy">
-            <p class="lead">
-              I enjoy turning ideas into useful, accessible, and easy-to-use
-              digital products.
-            </p>
-            <p>
-              My approach is to understand the problem first, plan a practical
-              solution, and then build and improve it through testing and
-              feedback. I like learning new technologies and collaborating with
-              people who care about the details.
-            </p>
-            <p>
-              This portfolio is a place to share projects, skills, and the
-              progress I make as a developer.
-            </p>
-            <a class="text-link" href="#contact"
-              >Have a project in mind?
-              <span class="material-symbols-outlined">arrow_forward</span></a
-            >
-          </div>
-          <div class="about-facts">
-            <article class="fact-card">
-              <span class="fact-icon material-symbols-outlined">school</span>
-              <div>
-                <small>EDUCATION</small>
-                <h3>Computer Science / IT</h3>
-                <p>Update with your school and degree</p>
-              </div>
-            </article>
-            <article class="fact-card">
-              <span class="fact-icon material-symbols-outlined"
-                >location_on</span
-              >
-              <div>
-                <small>LOCATION</small>
-                <h3>Cebu City, Philippines</h3>
-                <p>Open to remote collaboration</p>
-              </div>
-            </article>
-            <article class="fact-card">
-              <span class="fact-icon material-symbols-outlined">interests</span>
-              <div>
-                <small>INTERESTS</small>
-                <h3>Web, UI &amp; Technology</h3>
-                <p>Building, learning, and experimenting</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section class="section-wrap section-block" id="skills">
-        <div class="section-heading centered-heading">
-          <p class="eyebrow">WHAT I WORK WITH</p>
-          <h2>Tools of the <span class="accent">trade.</span></h2>
-          <p class="section-intro">
-            A growing toolkit for designing, building, and improving digital
-            products.
-          </p>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <div class="skill-card-head">
-              <span class="skill-symbol material-symbols-outlined">code</span
-              ><span class="skill-number">01</span>
-            </div>
-            <h3>Frontend</h3>
-            <p>
-              Building responsive interfaces and accessible user experiences.
-            </p>
-            <div class="tag-list">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span
-              ><span>Tailwind</span>
-            </div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-card-head">
-              <span class="skill-symbol material-symbols-outlined">dns</span
-              ><span class="skill-number">02</span>
-            </div>
-            <h3>Backend</h3>
-            <p>Working with application logic, APIs, and server-side tools.</p>
-            <div class="tag-list">
-              <span>Node.js</span><span>REST APIs</span><span>SQL</span>
-            </div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-card-head">
-              <span class="skill-symbol material-symbols-outlined">palette</span
-              ><span class="skill-number">03</span>
-            </div>
-            <h3>Design</h3>
-            <p>Planning layouts that feel clear, consistent, and intuitive.</p>
-            <div class="tag-list">
-              <span>Figma</span><span>Wireframes</span><span>Prototyping</span>
-            </div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-card-head">
-              <span class="skill-symbol material-symbols-outlined">build</span
-              ><span class="skill-number">04</span>
-            </div>
-            <h3>Workflow</h3>
-            <p>
-              Keeping projects organized and improving them through feedback.
-            </p>
-            <div class="tag-list">
-              <span>Git</span><span>GitHub</span><span>Testing</span>
-            </div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-card-head">
-              <span class="skill-symbol material-symbols-outlined">settings_suggest</span
-              ><span class="skill-number">05</span>
-            </div>
-            <h3>IT Support &amp; Troubleshooting</h3>
-            <p>
-              Identifying common computer hardware and software issues,
-              diagnosing possible causes, and finding practical solutions.
-            </p>
-            <div class="tag-list">
-              <span>PC Diagnostics</span><span>Hardware</span><span>Software</span>
-            </div>
-          </article>
-        </div>
-        <p class="note-text">
-          Edit the technologies above so they accurately represent your current
-          skills.
+    <!-- SKILLS -->
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading centered-heading">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2>Tools of the <span class="accent">trade.</span></h2>
+        <p class="section-intro">
+          A growing toolkit for designing, building, and improving digital
+          products.
         </p>
-      </section>
-
-      <!-- PROJECTS -->
-      <section class="section-wrap section-block" id="projects">
-        <div class="projects-heading-row">
-          <div class="section-heading">
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>Things I've <span class="accent">built.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-symbol material-symbols-outlined">code</span><span class="skill-number">01</span>
           </div>
-          <p class="projects-intro">
-            A selection of practice projects and experiments. Replace these
-            examples with your real work.
+          <h3>Frontend</h3>
+          <p>
+            Building responsive interfaces and accessible user experiences.
           </p>
-        </div>
-
-        <div class="project-filters" role="group" aria-label="Filter projects">
-          <button
-            class="project-filter-btn active"
-            type="button"
-            data-filter="all"
-            aria-pressed="true"
-          >
-            All projects
-          </button>
-          <button
-            class="project-filter-btn"
-            type="button"
-            data-filter="web"
-            aria-pressed="false"
-          >
-            Web
-          </button>
-          <button
-            class="project-filter-btn"
-            type="button"
-            data-filter="app"
-            aria-pressed="false"
-          >
-            Apps
-          </button>
-          <button
-            class="project-filter-btn"
-            type="button"
-            data-filter="design"
-            aria-pressed="false"
-          >
-            Design
-          </button>
-        </div>
-
-        <div class="projects-grid" id="projects-grid">
-          <article class="project-card" data-category="MOD">
-            <div class="project-art art-dashboard">
-              <div class="mock-browser">
-                <div class="mock-browser-top"><i></i><i></i><i></i></div>
-                <div class="mock-dashboard">
-                  <div class="mock-sidebar"></div>
-                  <div class="mock-main">
-                    <div class="mock-title"></div>
-                    <div class="mock-stats"><i></i><i></i><i></i></div>
-                    <div class="mock-chart"></div>
-                  </div>
-                </div>
-              </div>
-              <span class="project-art-label">01 / MOD</span>
-            </div>
-            <div class="project-content">
-              <div class="project-meta">
-                <span>MOD DEVELOPMENT</span
-                ><span class="material-symbols-outlined">north_east</span>
-              </div>
-              <h3>Minecraft Mod Project</h3>
-              <p>
-                A Minecraft mod that expands the gameplay experience with custom
-                features.
-              </p>
-              <div class="tag-list">
-                <span>JavaScript</span>
-              </div>
-              <div class="project-links">
-                <a href="#contact" aria-label="Minecraft Mod Project"
-                  >Project details
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                ><a
-                  href="https://github.com/iqlvl02/attribute-swap-indicator"
-                  target="Minecraft Mod Project"
-                  rel="noreferrer"
-                  >Source code
-                  <span class="material-symbols-outlined">code</span></a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="project-card" data-category="app">
-            <div class="project-art art-mobile">
-              <div class="phone-mock">
-                <div class="phone-notch"></div>
-                <div class="phone-ui">
-                  <div class="phone-greeting"></div>
-                  <div class="phone-balance"></div>
-                  <div class="phone-row"></div>
-                  <div class="phone-row"></div>
-                  <div class="phone-row"></div>
-                  <div class="phone-nav"></div>
-                </div>
-              </div>
-              <span class="project-art-label">02 / FIGMA</span>
-            </div>
-            <div class="project-content">
-              <div class="project-meta">
-                <span>Mobile App UI/UX Design</span
-                ><span class="material-symbols-outlined">north_east</span>
-              </div>
-              <h3>Mobile App UI/UX Design</h3>
-              <p>
-                A mobile app prototype designed in Figma, focused on clean UI,
-                intuitive navigation, and a seamless user experience. Currently
-                in the design and prototyping stage.
-              </p>
-              <div class="tag-list">
-                <span>UI/UX</span><span>Figma</span><span>Prototyping</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://www.figma.com/design/WqaZ7sPOE0p1jWq0tZUmwj/Untitled?node-id=0-1&t=Lj60jCCVEOFo4jQr-1"
-                  >Project details
-                  <span class="material-symbols-outlined"
-                    >arrow_outward</span
-                  ></a
-                ><a
-                  href="https://github.com/iqlvl02"
-                  target="_blank"
-                  rel="noreferrer"
-          
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-        <p class="empty-projects" id="empty-projects" hidden>
-          No projects match this category yet.
-        </p>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="section-wrap section-block contact-section" id="contact">
-        <div class="contact-panel">
-          <div class="contact-copy">
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h2>
-              Have an idea?<br /><span class="muted-heading"
-                >Let's make it real.</span
-              >
-            </h2>
-            <p>
-              Have a question, an opportunity, or a project you'd like to
-              discuss? Send a message using the form or contact me directly.
-            </p>
-            <a class="contact-email" href="mailto:hello@example.com"
-              ><span class="material-symbols-outlined">mail</span>
-              hello@example.com</a
-            >
-            <div class="contact-socials">
-              <a
-                href="https://github.com/iqlvl02"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub ↗</a
-              ><a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                >LinkedIn ↗</a
-              >
-            </div>
+          <div class="tag-list">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span>
           </div>
-          <form class="contact-form" id="contact-form">
-            <label for="name">Your name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="RF Rafanan"
-              required
-            />
-            <label for="email">Email address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="rafanan@example.com"
-              required
-            />
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Tell me a little about your idea..."
-              required
-            ></textarea>
-            <button class="button form-submit" type="submit">
-              Prepare email <span class="material-symbols-outlined">send</span>
-            </button>
-            <p class="form-note" id="form-note" role="status">
-              This opens your default email app; it does not send a message from
-              the website itself.
-            </p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <a class="brand" href="#home"
-        ><span class="brand-mark">A</span
-        ><span>Arjay<span class="accent">.dev</span></span></a
-      >
-      <p>
-        Designed and built with curiosity.
-        <span class="accent">© <span id="current-year"></span></span>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-symbol material-symbols-outlined">dns</span><span class="skill-number">02</span>
+          </div>
+          <h3>Backend</h3>
+          <p>Working with application logic, APIs, and server-side tools.</p>
+          <div class="tag-list">
+            <span>Node.js</span><span>REST APIs</span><span>SQL</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-symbol material-symbols-outlined">palette</span><span class="skill-number">03</span>
+          </div>
+          <h3>Design</h3>
+          <p>Planning layouts that feel clear, consistent, and intuitive.</p>
+          <div class="tag-list">
+            <span>Figma</span><span>Wireframes</span><span>Prototyping</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-symbol material-symbols-outlined">build</span><span class="skill-number">04</span>
+          </div>
+          <h3>Workflow</h3>
+          <p>
+            Keeping projects organized and improving them through feedback.
+          </p>
+          <div class="tag-list">
+            <span>Git</span><span>GitHub</span><span>Testing</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-symbol material-symbols-outlined">settings_suggest</span><span
+              class="skill-number">05</span>
+          </div>
+          <h3>IT Support &amp; Troubleshooting</h3>
+          <p>
+            Identifying common computer hardware and software issues,
+            diagnosing possible causes, and finding practical solutions.
+          </p>
+          <div class="tag-list">
+            <span>PC Diagnostics</span><span>Hardware</span><span>Software</span>
+          </div>
+        </article>
+      </div>
+      <p class="note-text">
+        Edit the technologies above so they accurately represent your current
+        skills.
       </p>
-      <a class="back-top" href="#home"
-        >Back to top
-        <span class="material-symbols-outlined">arrow_upward</span></a
-      >
-    </footer>
-  </body>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-wrap section-block" id="projects">
+      <div class="projects-heading-row">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Things I've <span class="accent">built.</span></h2>
+        </div>
+        <p class="projects-intro">
+          A selection of practice projects and experiments. Replace these
+          examples with your real work.
+        </p>
+      </div>
+
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="project-filter-btn active" type="button" data-filter="all" aria-pressed="true">
+          All projects
+        </button>
+        <button class="project-filter-btn" type="button" data-filter="web" aria-pressed="false">
+          Web
+        </button>
+        <button class="project-filter-btn" type="button" data-filter="app" aria-pressed="false">
+          Apps
+        </button>
+        <button class="project-filter-btn" type="button" data-filter="design" aria-pressed="false">
+          Design
+        </button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card" data-category="MOD">
+          <div class="project-art art-dashboard">
+            <div class="mock-browser">
+              <div class="mock-browser-top"><i></i><i></i><i></i></div>
+              <div class="mock-dashboard">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-title"></div>
+                  <div class="mock-stats"><i></i><i></i><i></i></div>
+                  <div class="mock-chart"></div>
+                </div>
+              </div>
+            </div>
+            <span class="project-art-label">01 / MOD</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>MOD DEVELOPMENT</span><span class="material-symbols-outlined">north_east</span>
+            </div>
+            <h3>Minecraft Mod Project</h3>
+            <p>
+              A Minecraft mod that expands the gameplay experience with custom
+              features.
+            </p>
+            <div class="tag-list">
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" aria-label="Minecraft Mod Project">Project details
+                <span class="material-symbols-outlined">arrow_outward</span></a><a
+                href="https://github.com/iqlvl02/attribute-swap-indicator" target="Minecraft Mod Project"
+                rel="noreferrer">Source code
+                <span class="material-symbols-outlined">code</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-art art-dashboard">
+            <div class="mock-browser">
+              <div class="mock-browser-top"><i></i><i></i><i></i></div>
+              <div class="mock-dashboard">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-title"></div>
+                  <div class="mock-stats"><i></i><i></i><i></i></div>
+                  <div class="mock-chart"></div>
+                </div>
+              </div>
+            </div>
+            <span class="project-art-label">02 / WEB DEVELOPMENTP</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span>WEB DEVELOPMENT</span>
+              <span class="material-symbols-outlined">north_east</span>
+            </div>
+
+            <h3>CEC Campus Store</h3>
+
+            <p>
+              A group-developed e-commerce website featuring user
+              registration, login, product listings, and shopping cart
+              functionality. Built as an academic project.
+            </p>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/iqlvl02/cec-campus-store" target="_blank" rel="noreferrer">
+                Source code
+                <span class="material-symbols-outlined">code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: NETHER WART GUARD -->
+        <article class="project-card" data-category="app">
+          <div class="project-art art-mobile">
+            <div class="mock-browser">
+              <div class="mock-browser-top"><i></i><i></i><i></i></div>
+              <div class="mock-dashboard">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-title"></div>
+                  <div class="mock-stats"><i></i><i></i><i></i></div>
+                  <div class="mock-chart"></div>
+                </div>
+              </div>
+            </div>
+            <span class="project-art-label">03 / MINECRAFT MOD</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span>FABRIC MOD DEVELOPMENT</span>
+              <span class="material-symbols-outlined">north_east</span>
+            </div>
+
+            <h3>Nether Wart Guard</h3>
+
+            <p>
+              A client-side Minecraft Fabric mod that prevents accidentally
+              breaking immature Nether Wart while allowing fully grown crops
+              to be harvested normally.
+            </p>
+
+            <div class="tag-list">
+              <span>Java</span>
+              <span>Fabric API</span>
+              <span>Minecraft</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/iqlvl02/NetherWartGuard" target="_blank" rel="noreferrer">
+                Source code
+                <span class="material-symbols-outlined">code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-category="app">
+          <div class="project-art art-mobile">
+            <div class="phone-mock">
+              <div class="phone-notch"></div>
+              <div class="phone-ui">
+                <div class="phone-greeting"></div>
+                <div class="phone-balance"></div>
+                <div class="phone-row"></div>
+                <div class="phone-row"></div>
+                <div class="phone-row"></div>
+                <div class="phone-nav"></div>
+              </div>
+            </div>
+            <span class="project-art-label">04 / FIGMA</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Mobile App UI/UX Design</span><span class="material-symbols-outlined">north_east</span>
+            </div>
+            <h3>Mobile App UI/UX Design</h3>
+            <p>
+              A mobile app prototype designed in Figma, focused on clean UI,
+              intuitive navigation, and a seamless user experience. Currently
+              in the design and prototyping stage.
+            </p>
+            <div class="tag-list">
+              <span>UI/UX</span><span>Figma</span><span>Prototyping</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.figma.com/design/WqaZ7sPOE0p1jWq0tZUmwj/Untitled?node-id=0-1&t=Lj60jCCVEOFo4jQr-1">Project
+                details
+                <span class="material-symbols-outlined">arrow_outward</span></a><a href="https://github.com/iqlvl02"
+                target="_blank" rel="noreferrer">
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-projects" id="empty-projects" hidden>
+        No projects match this category yet.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-wrap section-block contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>
+            Have an idea?<br /><span class="muted-heading">Let's make it real.</span>
+          </h2>
+          <p>
+            Have a question, an opportunity, or a project you'd like to
+            discuss? Send a message using the form or contact me directly.
+          </p>
+          <a class="contact-email" href="mailto:iqlvl02@gmail.com"><span class="material-symbols-outlined">mail</span>
+            iqlvl02@gmail.com</a>
+          <div class="contact-socials">
+            <a href="https://github.com/iqlvl02" target="_blank" rel="noreferrer">GitHub ↗</a><a
+              href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="RF Rafanan" required />
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="rafanan@example.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me a little about your idea..."
+            required></textarea>
+          <button class="button form-submit" type="submit">
+            Prepare email <span class="material-symbols-outlined">send</span>
+          </button>
+          <p class="form-note" id="form-note" role="status">
+            This opens your default email app; it does not send a message from
+            the website itself.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">A</span><span>Arjay<span
+          class="accent">.dev</span></span></a>
+    <p>
+      Designed and built with curiosity.
+      <span class="accent">© <span id="current-year"></span></span>
+    </p>
+    <a class="back-top" href="#home">Back to top
+      <span class="material-symbols-outlined">arrow_upward</span></a>
+  </footer>
+</body>
+
 </html>
